@@ -4,26 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean Feet Pet Cleanup | Omaha's #1 Pooper Scooper & Pet Waste Service</title>
-    <meta name="description" content="Professional pet waste removal and dog poop scooping services in Omaha, Elkhorn, and Papillion. 100% satisfaction guarantee. Starting at $45/mo.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Professional dog poop scooping and pet waste removal in Omaha, Elkhorn, and Papillion. 100% satisfaction guarantee, insured, and no contracts. Starting at $45/mo.">
+    
+    <!-- Schema.org LocalBusiness Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Clean Feet Pet Cleanup",
+      "image": "https://cleanfeetpetcleanup.com/wp-content/uploads/2015/04/cropped-black_background_with_tagline-e1429496051377.jpg",
+      "@id": "",
+      "url": "https://cleanfeetpetcleanup.com",
+      "telephone": "(402) 320-3824",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Serving Omaha and surrounding areas",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE",
+        "postalCode": "68101",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.2565,
+        "longitude": -95.9345
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "16:00"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Mobile Click-to-Call -->
+    <div class="mobile-cta">
+        <a href="tel:4023203824" class="btn-call">
+            <i class="fas fa-phone-alt"></i> Call Now for a Free Quote
+        </a>
+    </div>
+
     <header id="header">
         <div class="container nav">
-            <a href="#home" class="logo">
+            <a href="/" class="logo">
                 <img src="https://cleanfeetpetcleanup.com/wp-content/uploads/2015/04/cropped-black_background_with_tagline-e1429496051377.jpg" alt="Clean Feet Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#dog-services">Dog Services</a></li>
-                <li><a href="#cat-services">Cat Services</a></li>
-                <li><a href="#service-area">Service Area</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/dog-services.html">Dog Services</a></li>
+                <li><a href="/cat-services.html">Cat Services</a></li>
+                <li><a href="/service-area.html">Service Area</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Free Quote</a>
+            <a href="/contact.html" class="btn btn-primary">Free Quote</a>
         </div>
     </header>
 
@@ -34,36 +81,60 @@
             <div class="container">
                 <div class="hero-content" data-aos="fade-right">
                     <h1>Omaha's #1 <span>Pooper Scooper</span> Service.</h1>
-                    <p>Professional pet waste removal for residential yards and commercial properties. We keep your yard clean, safe, and smell-free—Guaranteed.</p>
+                    <p>Professional pet waste removal for homes and businesses. Clean yard, happy pets, no contracts.</p>
                     <div class="hero-btns">
-                        <a href="#dog-services" class="btn btn-primary">View Pricing <i class="fas fa-tags"></i></a>
-                        <a href="#contact" class="btn" style="color: white; border: 1px solid white; margin-left: 1rem;">Get A Quote</a>
+                        <a href="/dog-services.html" class="btn btn-primary">View Pricing <i class="fas fa-tags"></i></a>
+                        <a href="/contact.html" class="btn" style="color: white; border: 1px solid white; margin-left: 1rem;">Get a Free Quote</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Trust Badges -->
+            <div class="container" style="margin-top: 5rem;">
+                <div class="trust-flex" style="justify-content: flex-start; gap: 3rem;">
+                    <div class="trust-item"><i class="fas fa-check-circle"></i> 100% Satisfaction Guarantee</div>
+                    <div class="trust-item"><i class="fas fa-shield-alt"></i> Fully Insured & Bonded</div>
+                    <div class="trust-item"><i class="fas fa-user-tie"></i> Uniformed Professionals</div>
+                    <div class="trust-item"><i class="fas fa-file-contract"></i> No Contracts Required</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>How It <span>Works</span></h2>
+                    <p>Reclaiming your yard is as easy as 1-2-3.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-item" data-aos="fade-up">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>1. Schedule Online</h4>
+                        <p>Pick your plan and submit a free quote request. We'll confirm your schedule within 24 hours.</p>
+                    </div>
+                    <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-truck-pickup"></i>
+                        <h4>2. We Show Up</h4>
+                        <p>Our uniformed pros clean your yard on your schedule. You don't even need to be home!</p>
+                    </div>
+                    <div class="why-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-sun"></i>
+                        <h4>3. Enjoy Your Yard</h4>
+                        <p>Fresh, sanitized, and smell-free. Guaranteed. We even send photo proof after every visit.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Trust Bar -->
-        <div class="trust-bar">
-            <div class="container trust-flex">
-                <div class="trust-item"><i class="fas fa-shield-check"></i> 100% Satisfaction Guarantee</div>
-                <div class="trust-item"><i class="fas fa-user-shield"></i> Fully Insured & Bonded</div>
-                <div class="trust-item"><i class="fas fa-id-badge"></i> Uniformed Professionals</div>
-                <div class="trust-item"><i class="fas fa-calendar-check"></i> No Contracts Required</div>
-            </div>
-        </div>
-
-        <!-- Dog Services -->
-        <section id="dog-services">
+        <!-- Pricing Preview -->
+        <section id="dog-services" style="background: var(--bg-alt);">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Dog Waste <span>Pricing</span></h2>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">Transparent, flat-rate pricing. No hidden fees or long-term contracts.</p>
+                    <h2>Weekly Dog Waste <span>Pricing</span></h2>
+                    <p>Our most popular service for Omaha families.</p>
                 </div>
-                
-                <h3 style="text-align: center; margin-bottom: 3rem; font-weight: 800; text-transform: uppercase; color: var(--secondary);">Weekly Service Plan</h3>
                 <div class="price-grid">
-                    <div class="price-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="price-card" data-aos="fade-up">
                         <h3>1 Dog</h3>
                         <div class="price">$45<span>/mo</span></div>
                         <ul>
@@ -72,9 +143,9 @@
                             <li><i class="fas fa-check"></i> Waste Hauled Away</li>
                             <li><i class="fas fa-check"></i> Deodorizer Included</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
+                        <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
                     </div>
-                    <div class="price-card popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="price-card popular" data-aos="fade-up" data-aos-delay="100">
                         <div class="popular-badge">Most Popular</div>
                         <h3>2 Dogs</h3>
                         <div class="price">$50<span>/mo</span></div>
@@ -84,9 +155,9 @@
                             <li><i class="fas fa-check"></i> Waste Hauled Away</li>
                             <li><i class="fas fa-check"></i> Deodorizer Included</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
+                        <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
                     </div>
-                    <div class="price-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="price-card" data-aos="fade-up" data-aos-delay="200">
                         <h3>3 Dogs</h3>
                         <div class="price">$55<span>/mo</span></div>
                         <ul>
@@ -95,9 +166,9 @@
                             <li><i class="fas fa-check"></i> Waste Hauled Away</li>
                             <li><i class="fas fa-check"></i> Deodorizer Included</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
+                        <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
                     </div>
-                    <div class="price-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="price-card" data-aos="fade-up" data-aos-delay="300">
                         <h3>4 Dogs</h3>
                         <div class="price">$60<span>/mo</span></div>
                         <ul>
@@ -106,56 +177,66 @@
                             <li><i class="fas fa-check"></i> Waste Hauled Away</li>
                             <li><i class="fas fa-check"></i> Deodorizer Included</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
+                        <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Sign Up Now</a>
                     </div>
                 </div>
-
-                <div style="text-align: center; margin-top: 5rem;" data-aos="fade-up">
-                    <h3 style="margin-bottom: 2rem; font-weight: 800; text-transform: uppercase;">Need Twice-Weekly Cleanup?</h3>
-                    <p style="margin-bottom: 3rem; color: var(--text-muted);">Double the freshness for high-traffic yards. Starting at just <b>$65/mo</b>.</p>
-                    <a href="#contact" class="btn" style="border: 2px solid var(--secondary); font-size: 1.1rem; padding: 1.2rem 3rem;">Request Twice-Weekly Quote</a>
+                <div style="text-align: center; margin-top: 4rem;">
+                    <p style="font-weight: 700;">Need Twice-Weekly? Starting at <span style="color: var(--primary);">$65/mo</span></p>
                 </div>
             </div>
         </section>
 
-        <!-- Why Choose Us -->
-        <section id="why-us" class="why-us">
+        <!-- Testimonials -->
+        <section>
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; margin-bottom: 5rem;">
-                    <div data-aos="fade-right">
-                        <img src="/service.png" alt="Professional Cleaner" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Happy Pets, <span>Happy People</span></h2>
+                    <p>See why your neighbors in Omaha trust Clean Feet.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Clean Feet has been a lifesaver. With three dogs and a busy schedule, I never had time for the yard. Now it's always spotless!"</p>
+                        <p class="testimonial-author">Sarah M.</p>
+                        <p class="testimonial-location">Papillion, NE</p>
                     </div>
-                    <div data-aos="fade-left">
-                        <h2>The Clean Feet <span>Commitment</span></h2>
-                        <p style="margin: 1.5rem 0; color: var(--text-muted);">We treat every yard like our own. Our systematic sweep and sanitization protocols ensure your family and pets stay safe and healthy.</p>
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
-                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Sanitized Tools Between Yards</li>
-                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Uniformed, Background-Checked Staff</li>
-                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Photo Proof of Completion</li>
-                        </ul>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The photo proof they send after every visit is such a nice touch. I know exactly when they've been there and that the gate is locked."</p>
+                        <p class="testimonial-author">James R.</p>
+                        <p class="testimonial-location">Elkhorn, NE</p>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Reliable, professional, and friendly. Their sanitization process makes me feel much better about my kids playing in the grass."</p>
+                        <p class="testimonial-author">Emily W.</p>
+                        <p class="testimonial-location">Millard, NE</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Service Area Heat Map -->
+        <!-- Service Area -->
         <section id="service-area" class="service-area">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Our Service <span>Area</span></h2>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">We cover the entire Omaha metro and surrounding communities.</p>
+                    <h2>Serving the <span>Omaha Metro</span></h2>
+                    <p>From Council Bluffs to Valley, we've got you covered.</p>
                 </div>
                 <div class="map-container" data-aos="zoom-in">
                     <div class="map-placeholder"></div>
                     <div class="map-overlay">
-                        <i class="fas fa-location-dot" style="font-size: 3rem; color: var(--secondary);"></i>
-                    </div>
-                    <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 1rem; border-radius: 12px; box-shadow: var(--shadow-md); z-index: 5;">
-                        <h4 style="color: var(--secondary);">Primary Service Zone</h4>
-                        <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Omaha, NE & Surrounding Areas</p>
+                        <i class="fas fa-dog" style="font-size: 4rem; color: var(--secondary);"></i>
                     </div>
                 </div>
                 <div class="area-list" data-aos="fade-up">
+                    <div class="area-tag">Omaha</div>
                     <div class="area-tag">Bellevue</div>
                     <div class="area-tag">Elkhorn</div>
                     <div class="area-tag">Gretna</div>
@@ -175,77 +256,75 @@
             </div>
         </section>
 
-        <!-- Cat Services -->
-        <section id="cat-services">
+        <!-- Cat Litter Service Teaser -->
+        <section style="background: var(--secondary); color: white;">
             <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Cat Litter <span>Service</span></h2>
-                </div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                    <div class="price-grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
-                        <div class="price-card" data-aos="fade-right">
-                            <h3>1 Cat</h3>
-                            <div class="price">$50<span>/mo</span></div>
-                            <p style="margin-bottom: 2rem; color: var(--text-muted);">Weekly exchange and fresh premium litter delivery.</p>
-                            <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                    <div data-aos="fade-right">
+                        <h2 style="font-size: 3rem; margin-bottom: 2rem;">Don't Forget the <span>Cats!</span></h2>
+                        <p style="margin-bottom: 2rem; opacity: 0.8; font-size: 1.2rem;">We offer premium cat litter exchange services. Weekly delivery of fresh litter and removal of the old—no more heavy lifting or smelly bins.</p>
+                        <div style="display: flex; gap: 2rem; margin-bottom: 3rem;">
+                            <div>
+                                <h4 style="color: var(--primary);">1 Cat</h4>
+                                <p style="font-size: 1.5rem; font-weight: 800;">$50/mo</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary);">2 Cats</h4>
+                                <p style="font-size: 1.5rem; font-weight: 800;">$70/mo</p>
+                            </div>
                         </div>
-                        <div class="price-card" data-aos="fade-right" data-aos-delay="100">
-                            <h3>2 Cats</h3>
-                            <div class="price">$70<span>/mo</span></div>
-                            <p style="margin-bottom: 2rem; color: var(--text-muted);">Weekly exchange and fresh premium litter delivery.</p>
-                            <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
-                        </div>
+                        <a href="/cat-services.html" class="btn btn-primary">Learn More &rarr;</a>
                     </div>
                     <div data-aos="fade-left">
-                        <img src="/cat-service.png" alt="Cat Service" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                        <img src="/cat-service.png" alt="Cat Service" style="width: 100%; border-radius: 24px;">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog" style="background: #fcfcfc;">
+        <!-- Blog Preview -->
+        <section id="blog">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
-                    <h2>The Clean <span>Yard Blog</span></h2>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">Expert tips on yard maintenance and pet health.</p>
+                    <h2>Yard <span>Care Tips</span></h2>
+                    <p>Expert advice for a healthier backyard.</p>
                 </div>
-                <div class="grid-premium" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="testimonial-grid">
                     <div class="blog-card" data-aos="fade-up">
-                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1541599540903-216a46ca1df0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1541599540903-216a46ca1df0?auto=format&fit=crop&w=800&q=80');"></div>
                         <div class="blog-content">
                             <h4>Why Professional Scooping Beats DIY</h4>
-                            <p>Discover how professional service saves you time and ensures a more hygienic yard for your family.</p>
-                            <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: none;">Read More &rarr;</a>
+                            <p>Discover how professional service saves you time and ensures a more hygienic yard.</p>
+                            <a href="/blog/why-professional-scooping-beats-diy.html" style="color: var(--primary); font-weight: 800; text-decoration: none;">Read More &rarr;</a>
                         </div>
                     </div>
                     <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80');"></div>
                         <div class="blog-content">
                             <h4>Hidden Dangers of Pet Waste</h4>
-                            <p>Pet waste isn't just a mess—it can harbor parasites and bacteria. Learn how to keep your pets safe.</p>
-                            <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: none;">Read More &rarr;</a>
+                            <p>Pet waste isn't just a mess—it can harbor parasites and bacteria. Learn the risks.</p>
+                            <a href="/blog/hidden-dangers-of-pet-waste.html" style="color: var(--primary); font-weight: 800; text-decoration: none;">Read More &rarr;</a>
                         </div>
                     </div>
                     <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80');"></div>
                         <div class="blog-content">
                             <h4>Our 5-Step Sanitization Process</h4>
                             <p>Learn how we go beyond just scooping to ensure your yard is truly clean and odor-free.</p>
-                            <a href="#" style="color: var(--primary); font-weight: 700; text-decoration: none;">Read More &rarr;</a>
+                            <a href="/blog/our-5-step-sanitization-process.html" style="color: var(--primary); font-weight: 800; text-decoration: none;">Read More &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact/Quote Section -->
-        <section id="contact" style="background: var(--bg-alt); padding-bottom: 200px;">
+        <!-- Contact Form -->
+        <section id="contact" style="background: var(--bg-alt);">
             <div class="container">
                 <div class="contact-overlay" data-aos="fade-up">
                     <div>
-                        <h2>Ready for a <span>Clean Yard?</span></h2>
-                        <p style="margin: 2rem 0; opacity: 0.8;">Join hundreds of Omaha families who trust Clean Feet to handle the dirty work.</p>
+                        <h2>Get Your <span>Free Quote</span></h2>
+                        <p style="margin: 2rem 0; opacity: 0.8;">We'll get back to you within 24 hours with a custom plan for your yard.</p>
                         <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 1rem;">
                                 <i class="fas fa-phone-alt" style="color: var(--primary);"></i>
@@ -259,18 +338,27 @@
                     </div>
                     <form id="quote-form">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <input type="text" class="form-input" placeholder="Your Name" required>
+                            <input type="text" class="form-input" placeholder="Full Name" required>
                             <input type="email" class="form-input" placeholder="Email Address" required>
                         </div>
-                        <input type="tel" class="form-input" placeholder="Phone Number">
-                        <select class="form-input">
-                            <option>Residential Service</option>
-                            <option>Commercial Service</option>
-                            <option>One-Time Cleanup</option>
-                            <option>Cat Litter Service</option>
-                        </select>
-                        <textarea class="form-input" placeholder="Number of pets and any special instructions..." rows="4"></textarea>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <input type="tel" class="form-input" placeholder="Phone Number" required>
+                            <input type="text" class="form-input" placeholder="Home Address" required>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <input type="number" class="form-input" placeholder="Number of Dogs" min="1">
+                            <select class="form-input" required>
+                                <option value="" disabled selected>Service Type</option>
+                                <option>Weekly Dog Waste</option>
+                                <option>Twice-Weekly Dog Waste</option>
+                                <option>Cat Litter Service</option>
+                                <option>One-Time Cleanup</option>
+                                <option>Commercial Service</option>
+                            </select>
+                        </div>
+                        <textarea class="form-input" placeholder="Any special instructions (gate codes, aggressive dogs, etc.)" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary" style="width: 100%; height: 60px;">Request Free Quote &rarr;</button>
+                        <p id="form-msg" style="display: none; margin-top: 1rem; color: var(--primary); font-weight: 700;">Thanks! We'll be in touch within 24 hours.</p>
                     </form>
                 </div>
             </div>
@@ -287,22 +375,22 @@
                 <div class="footer-col">
                     <h4>Navigation</h4>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#dog-services">Dog Services</a></li>
-                        <li><a href="#cat-services">Cat Services</a></li>
-                        <li><a href="#service-area">Service Area</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Free Quote</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/dog-services.html">Dog Services</a></li>
+                        <li><a href="/cat-services.html">Cat Services</a></li>
+                        <li><a href="/service-area.html">Service Area</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/contact.html">Free Quote</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Legal & Info</h4>
                     <ul class="footer-links">
-                        <li><a href="https://cleanfeetpetcleanup.com/service-agreement/">Service Agreement</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="/service-agreement.html">Service Agreement</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/faqs.html">FAQs</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -312,11 +400,11 @@
                         <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
                         <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-yelp"></i></a>
                     </div>
-                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6);">Operating Hours:<br>Mon-Fri: 8 AM - 4 PM</p>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6);">Hours: Mon-Fri 8 AM - 4 PM</p>
                 </div>
             </div>
             <div style="padding-top: 3rem; border-top: 1px solid #222; text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 4rem;">
-                <p>&copy; 2026 Clean Feet Pet Cleanup. Serving the Omaha Metro with pride.</p>
+                <p>&copy; 2026 Clean Feet Pet Cleanup. All rights reserved.</p>
             </div>
         </div>
     </footer>

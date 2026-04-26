@@ -1,122 +1,88 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // Initialize AOS
 AOS.init({
-  duration: 1000,
-  once: true,
-  offset: 100,
-  easing: 'ease-out-cubic'
+    duration: 1000,
+    once: true,
+    offset: 100
 });
 
 // Header scroll effect
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });
 
-// Active link highlighting
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-links a');
+// Quote Form Handler
+const quoteForm = document.getElementById('quote-form');
+const formMsg = document.getElementById('form-msg');
 
-function updateActiveLink() {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= (sectionTop - 150)) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href').includes(current)) {
-      link.classList.add('active');
-    }
-  });
+if (quoteForm) {
+    quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // In a real app, you'd use fetch() to send this to a backend
+        // For now, we simulate a successful submission
+        quoteForm.style.opacity = '0.5';
+        quoteForm.querySelector('button').innerText = 'Sending...';
+        
+        setTimeout(() => {
+            quoteForm.reset();
+            quoteForm.style.opacity = '1';
+            quoteForm.querySelector('button').innerText = 'Request Free Quote →';
+            formMsg.style.display = 'block';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMsg.style.display = 'none';
+            }, 5000);
+        }, 1500);
+    });
 }
 
-window.addEventListener('scroll', updateActiveLink);
+// Contact Page Form Handler
+const quoteFormPage = document.getElementById('quote-form-page');
+const formMsgPage = document.getElementById('form-msg-page');
 
-// Premium Form Interactivity
-const contactForm = document.getElementById('premium-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Animate button
-    const btn = contactForm.querySelector('button');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
-    btn.style.opacity = '0.7';
-    btn.disabled = true;
-    
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fas fa-check-circle"></i> Request Received!';
-      btn.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
-      btn.style.opacity = '1';
-      
-      setTimeout(() => {
-        contactForm.reset();
-        btn.innerHTML = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    }, 1500);
-  });
+if (quoteFormPage) {
+    quoteFormPage.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        quoteFormPage.style.opacity = '0.5';
+        quoteFormPage.querySelector('button').innerText = 'Sending...';
+        
+        setTimeout(() => {
+            quoteFormPage.reset();
+            quoteFormPage.style.opacity = '1';
+            quoteFormPage.querySelector('button').innerText = 'Send Quote Request →';
+            formMsgPage.style.display = 'block';
+            
+            setTimeout(() => {
+                formMsgPage.style.display = 'none';
+            }, 5000);
+        }, 1500);
+    });
 }
 
-// Smooth scroll for all anchor links
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    if (targetId === '#') return;
-    
-    e.preventDefault();
-    const targetElement = document.querySelector(targetId);
-    
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: 'smooth'
-      });
-    }
-  });
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const headerOffset = 100;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    });
 });
-
-// Counter animation for stats (optional but nice)
-const stats = document.querySelectorAll('.stat-item h3');
-const observerOptions = {
-  threshold: 0.5
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const target = entry.target;
-      const count = parseInt(target.innerText.replace(/\D/g,''));
-      animateValue(target, 0, count, 2000);
-      observer.unobserve(target);
-    }
-  });
-}, observerOptions);
-
-stats.forEach(stat => observer.observe(stat));
-
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const suffix = obj.innerText.includes('+') ? '+' : (obj.innerText.includes('%') ? '%' : (obj.innerText.includes('/') ? '/5' : ''));
-  
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    const value = Math.floor(progress * (end - start) + start);
-    obj.innerHTML = value + suffix;
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}

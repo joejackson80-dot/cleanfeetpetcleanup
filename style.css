@@ -9,7 +9,8 @@
   --text-muted: #555555;
   --text-light: #ffffff;
   --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  --header-h: 110px; /* Increased height */
+  --header-h: 100px;
+  --max-width: 1200px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
@@ -516,4 +517,128 @@ section {
 .footer-links a:hover {
   color: var(--primary);
   padding-left: 5px;
+}
+
+/* Testimonials */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.stars {
+  color: #fbbf24;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.testimonial-location {
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Page Headers (for sub-pages) */
+.page-hero {
+  padding: 180px 0 100px;
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.page-hero p {
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Blog Article Layout */
+.blog-article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 2rem;
+}
+
+.blog-article h2, .blog-article h3 {
+  margin: 2.5rem 0 1.5rem;
+}
+
+.blog-article p {
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.blog-article img {
+  width: 100%;
+  border-radius: 24px;
+  margin: 2rem 0;
+}
+
+.blog-article ul {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.blog-article li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Mobile Click-to-Call */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .mobile-cta {
+    display: block;
+  }
+  
+  .btn-call {
+    width: 100%;
+    background: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
 }
