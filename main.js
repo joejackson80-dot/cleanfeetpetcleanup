@@ -68,10 +68,10 @@ const heroContent = document.querySelector('.hero-content');
 const heroToggle = document.getElementById('hero-info-toggle');
 
 if (heroContent && heroToggle) {
-    // Show the toggle button after the intro animation finishes (approx 8s)
+    // Show the toggle button quickly so users have control
     setTimeout(() => {
         heroToggle.classList.add('visible');
-    }, 8000);
+    }, 1000);
 
     heroToggle.addEventListener('click', () => {
         // Remove the CSS animation so it doesn't interfere with manual toggling

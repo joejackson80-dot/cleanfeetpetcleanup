@@ -162,21 +162,21 @@ header {
   max-width: 700px;
   position: relative;
   z-index: 10;
-  animation: heroIntro 8s forwards;
+  animation: heroIntro 5s forwards;
 }
 
 .hero-content.minimized {
   opacity: 0;
   pointer-events: none;
-  transform: translateY(20px);
-  transition: var(--transition);
+  transform: translateY(10px);
+  transition: all 0.2s ease-out;
 }
 
 @keyframes heroIntro {
-  0% { transform: translateX(-50px); opacity: 0; }
-  10% { transform: translateX(0); opacity: 1; }
+  0% { transform: translateX(-30px); opacity: 0; }
+  15% { transform: translateX(0); opacity: 1; }
   85% { transform: translateX(0); opacity: 1; }
-  100% { transform: translateY(20px); opacity: 0; pointer-events: none; }
+  100% { transform: translateY(10px); opacity: 0; pointer-events: none; }
 }
 
 .hero-info-toggle {
