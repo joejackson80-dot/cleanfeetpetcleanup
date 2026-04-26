@@ -792,15 +792,15 @@ footer {
   .hero-content {
     text-align: center;
     margin: 0 auto;
-    padding: 2rem 0 0; 
+    padding: calc(var(--header-h) + 2rem) 1.5rem 0;
     background: none;
     backdrop-filter: none;
     border: none;
-    margin-top: -25vh; /* Lift significantly higher to clear dog faces */
+    margin-top: 0;
   }
 
   .hero-image {
-    background-position: 95% bottom; 
+    background-position: 95% 90%; /* Shift dogs lower to clear the button */
   }
 
   .hero h1 {
@@ -815,7 +815,8 @@ footer {
   }
 
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
   }
   
   .hero p {
