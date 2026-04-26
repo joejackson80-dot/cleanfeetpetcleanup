@@ -648,8 +648,8 @@ section {
 
 @media (max-width: 600px) {
   .contact-overlay {
-    padding: 2rem 1.25rem;
-    gap: 2.5rem;
+    padding: 3rem 1.25rem;
+    gap: 2rem;
     border-radius: 16px;
   }
 
@@ -664,6 +664,8 @@ section {
 
   .contact-methods p {
     justify-content: center;
+    word-break: break-all;
+    font-size: 0.9rem;
   }
 
   .contact-form-card {
