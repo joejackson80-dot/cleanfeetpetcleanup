@@ -28,12 +28,17 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
   line-height: 1.6;
   background-color: var(--bg-light);
-  overflow-x: hidden;
 }
 
 .container {
@@ -299,7 +304,7 @@ section {
 .cat-header {
   position: relative;
   height: 400px;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1920&q=80') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/cat-service.png') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
