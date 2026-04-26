@@ -765,6 +765,12 @@ footer {
     display: block;
   }
 
+  .btn-nav-quote {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+
   .blog-grid, .footer-top {
     grid-template-columns: 1fr;
   }
