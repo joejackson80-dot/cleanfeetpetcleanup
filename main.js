@@ -63,3 +63,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Hero Info Animation & Toggle
+const heroContent = document.querySelector('.hero-content');
+const heroToggle = document.getElementById('hero-info-toggle');
+
+if (heroContent && heroToggle) {
+    // Show the toggle button after the intro animation finishes (approx 8s)
+    setTimeout(() => {
+        heroToggle.classList.add('visible');
+    }, 8000);
+
+    heroToggle.addEventListener('click', () => {
+        // Remove the CSS animation so it doesn't interfere with manual toggling
+        heroContent.style.animation = 'none';
+        
+        const isHidden = heroContent.classList.contains('minimized');
+        
+        if (isHidden) {
+            heroContent.classList.remove('minimized');
+            heroContent.style.opacity = '1';
+            heroContent.style.pointerEvents = 'auto';
+            heroContent.style.transform = 'translateY(0)';
+            heroToggle.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Info';
+        } else {
+            heroContent.classList.add('minimized');
+            heroToggle.innerHTML = '<i class="fas fa-info-circle"></i> Show Pricing & Info';
+        }
+    });
+}
+
