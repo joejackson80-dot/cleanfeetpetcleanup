@@ -9,7 +9,7 @@
   --text-muted: #555555;
   --text-light: #ffffff;
   --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  --header-h: 90px;
+  --header-h: 110px; /* Increased height */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
@@ -54,8 +54,9 @@ header {
 }
 
 header.scrolled {
-  height: 75px;
+  height: 85px;
   background: rgba(10, 10, 10, 0.98);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
 }
 
 nav {
@@ -63,15 +64,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .logo img {
-  height: 60px;
+  height: 75px; /* Significantly larger logo */
+  width: auto;
+  object-fit: contain;
   transition: var(--transition);
 }
 
 header.scrolled .logo img {
-  height: 48px;
+  height: 60px;
 }
 
 .nav-links {
@@ -138,7 +142,7 @@ header.scrolled .logo img {
   right: 0;
   width: 55%;
   height: 100%;
-  background: linear-gradient(to right, var(--secondary) 10%, transparent 40%), url('hero.png') center/cover no-repeat;
+  background: linear-gradient(to right, var(--secondary) 10%, transparent 40%), url('/hero.png') center/cover no-repeat;
   z-index: 1;
 }
 

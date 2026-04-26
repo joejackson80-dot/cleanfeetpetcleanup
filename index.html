@@ -124,9 +124,19 @@
         <!-- Why Choose Us (The "Better than Competition" Section) -->
         <section id="why-us" class="why-us">
             <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Why Choose <span>Clean Feet?</span></h2>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">We out-scoop the rest with superior service and attention to detail.</p>
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; margin-bottom: 5rem;">
+                    <div data-aos="fade-right">
+                        <img src="/service.png" alt="Professional Cleaner" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2>The Clean Feet <span>Commitment</span></h2>
+                        <p style="margin: 1.5rem 0; color: var(--text-muted);">We treat every yard like our own. Our systematic sweep and sanitization protocols ensure your family and pets stay safe and healthy.</p>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Sanitized Tools Between Yards</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Uniformed, Background-Checked Staff</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> Photo Proof of Completion</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="why-grid">
                     <div class="why-item" data-aos="fade-up">
@@ -154,18 +164,23 @@
                 <div class="section-title" data-aos="fade-up">
                     <h2>Cat Litter <span>Service</span></h2>
                 </div>
-                <div class="price-grid" style="max-width: 800px; margin: 0 auto;">
-                    <div class="price-card" data-aos="fade-right">
-                        <h3>1 Cat</h3>
-                        <div class="price">$50<span>/mo</span></div>
-                        <p style="margin-bottom: 2rem; color: var(--text-muted);">Weekly exchange and fresh premium litter delivery.</p>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="price-grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
+                        <div class="price-card" data-aos="fade-right">
+                            <h3>1 Cat</h3>
+                            <div class="price">$50<span>/mo</span></div>
+                            <p style="margin-bottom: 2rem; color: var(--text-muted);">Weekly exchange and fresh premium litter delivery.</p>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                        </div>
+                        <div class="price-card" data-aos="fade-right" data-aos-delay="100">
+                            <h3>2 Cats</h3>
+                            <div class="price">$70<span>/mo</span></div>
+                            <p style="margin-bottom: 2rem; color: var(--text-muted);">Weekly exchange and fresh premium litter delivery.</p>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                        </div>
                     </div>
-                    <div class="price-card" data-aos="fade-left">
-                        <h3>2 Cats</h3>
-                        <div class="price">$70<span>/mo</span></div>
-                        <p style="margin-bottom: 2rem; color: var(--text-muted);">Weekly exchange and fresh premium litter delivery.</p>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                    <div data-aos="fade-left">
+                        <img src="/cat-service.png" alt="Cat Service" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
                     </div>
                 </div>
             </div>
@@ -228,6 +243,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="main.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
