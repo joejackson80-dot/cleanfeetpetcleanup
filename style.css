@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
 :root {
   --primary: #a3d233;
   --primary-dark: #8bb329;
@@ -13,7 +15,7 @@
   --max-width: 1200px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
 
 * {
   margin: 0;
