@@ -790,22 +790,31 @@ footer {
   }
 
   .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85vh;
+    padding: calc(var(--header-h) + 1.5rem) 1.5rem 3rem;
     text-align: center;
     margin: 0 auto;
-    padding: calc(var(--header-h) + 2rem) 1.5rem 0;
     background: none;
     backdrop-filter: none;
     border: none;
     margin-top: 0;
   }
 
-  .hero-image {
-    background-position: 95% 90%; /* Shift dogs lower to clear the button */
+  .hero-title-top {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
   }
 
-  .hero h1 {
-    font-size: 2.8rem;
-    line-height: 1.2;
+  .hero-info-bottom {
+    margin-top: auto;
+  }
+
+  .hero-image {
+    background-position: 95% 60%; 
   }
 }
 
@@ -814,18 +823,19 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 2.25rem;
+  .hero-title-top {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
   .hero p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero-content {
-    padding: 2rem 1rem;
+    padding: calc(var(--header-h) + 1rem) 1rem 3rem;
+    min-height: 80vh;
   }
 
   .section-title h2 {
