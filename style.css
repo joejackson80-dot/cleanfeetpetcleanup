@@ -47,6 +47,30 @@ body {
   padding: 0 2rem;
 }
 
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+}
+
 /* Redesigned Navbar */
 header {
   position: fixed;
@@ -624,16 +648,26 @@ section {
 
 @media (max-width: 600px) {
   .contact-overlay {
-    padding: 1.5rem;
-    gap: 2rem;
+    padding: 2rem 1.25rem;
+    gap: 2.5rem;
+    border-radius: 16px;
   }
 
   .contact-info h2 {
     font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-info p {
+    text-align: center;
+  }
+
+  .contact-methods p {
+    justify-content: center;
   }
 
   .contact-form-card {
-    padding: 1.5rem;
+    padding: 1.75rem 1.25rem;
   }
 }
 
