@@ -132,12 +132,12 @@ header {
 .btn-nav-quote {
   background: var(--primary);
   color: #000000;
-  padding: 0.75rem 1.75rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 50px;
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   transition: var(--transition);
 }
@@ -792,15 +792,15 @@ footer {
   .hero-content {
     text-align: center;
     margin: 0 auto;
-    padding: 2rem 0 0; /* Add top padding to clear header */
+    padding: 3rem 0 0; /* Add top padding to clear header */
     background: none;
     backdrop-filter: none;
     border: none;
-    margin-top: -15vh; /* Slightly adjusted to not be too high */
+    margin-top: -10vh; /* Lift above dogs */
   }
 
   .hero-image {
-    background-position: 85% bottom; /* Shift further to center the main dog */
+    background-position: 95% bottom; /* Shift further to center the main dog */
   }
 
   .hero h1 {
