@@ -39,70 +39,101 @@
             </div>
         </div>
 
-        <section>
+        <section id="contact">
             <div class="container">
-                <div class="contact-overlay" style="box-shadow: none; padding: 0;">
-                    <div>
+                <div class="contact-overlay">
+                    <div class="contact-info">
                         <h2>Get in <span>Touch</span></h2>
-                        <p style="margin: 1.5rem 0; opacity: 0.8;">Our office is open Monday through Friday, 8:00 AM to 4:00 PM. We typically respond to all quote requests within the same business day.</p>
+                        <p>Our office is open Monday through Friday, 8:00 AM to 4:00 PM. We typically respond to all quote requests within the same business day.</p>
                         
-                        <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem;">
-                            <div style="display: flex; align-items: center; gap: 1.5rem;">
-                                <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
-                                <div>
-                                    <h4 style="color: var(--primary);">Call or Text</h4>
-                                    <p style="font-size: 1.2rem; font-weight: 800;">(402) 320-3824</p>
+                                <div class="method-text">
+                                    <h4>Call or Text</h4>
+                                    <p>(402) 320-3824</p>
                                 </div>
                             </div>
-                            <div style="display: flex; align-items: center; gap: 1.5rem;">
-                                <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
+                            <div class="method-item">
+                                <div class="method-icon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <div>
-                                    <h4 style="color: var(--primary);">Email Us</h4>
-                                    <p style="font-size: 1.2rem; font-weight: 800;">cleanfeetpetcleanup@gmail.com</p>
+                                <div class="method-text">
+                                    <h4>Email Us</h4>
+                                    <p>cleanfeetpetcleanup@gmail.com</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <form id="quote-form-page" style="background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); color: var(--secondary);">
-                        <h3 style="margin-bottom: 2rem;">Request a Free Quote</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <input type="text" class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" placeholder="Full Name" required>
-                            <input type="email" class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" placeholder="Email Address" required>
+                    <div class="contact-form-card">
+                        <form id="quote-form">
+                            <h3>Request a Free Quote</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <input type="text" class="form-input" placeholder="Full Name" required>
+                                <input type="email" class="form-input" placeholder="Email Address" required>
+                            </div>
+                            <input type="tel" class="form-input" placeholder="Phone Number" required>
+                            <input type="text" class="form-input" placeholder="Service Address" required>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <select class="form-input" required>
+                                    <option value="" disabled selected>Service Type</option>
+                                    <option>Weekly Dog Waste</option>
+                                    <option>Twice-Weekly Dog Waste</option>
+                                    <option>Cat Litter Service</option>
+                                    <option>One-Time Cleanup</option>
+                                    <option>Commercial Service</option>
+                                </select>
+                                <input type="number" class="form-input" placeholder="Number of Dogs" min="1">
+                            </div>
+                            
+                            <textarea class="form-input" placeholder="Your message or special instructions..." rows="4"></textarea>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Quote Request &rarr;</button>
+                        </form>
+                        <div id="form-success" class="form-success">
+                            Thanks! We'll be in touch within 24 hours.
                         </div>
-                        <input type="tel" class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" placeholder="Phone Number" required>
-                        <input type="text" class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" placeholder="Service Address" required>
-                        
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <select class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" required>
-                                <option value="" disabled selected>Service Type</option>
-                                <option>Weekly Dog Waste</option>
-                                <option>Twice-Weekly Dog Waste</option>
-                                <option>Cat Litter Service</option>
-                                <option>One-Time Cleanup</option>
-                                <option>Commercial Service</option>
-                            </select>
-                            <input type="number" class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" placeholder="Number of Dogs" min="1">
-                        </div>
-                        
-                        <textarea class="form-input" style="background: #f8fafc; border-color: #e2e8f0; color: var(--secondary);" placeholder="Your message or special instructions..." rows="4"></textarea>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; height: 60px;">Send Quote Request &rarr;</button>
-                        <p id="form-msg-page" style="display: none; margin-top: 1rem; color: var(--primary); font-weight: 700; text-align: center;">Thanks! We'll be in touch within 24 hours.</p>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="background: var(--secondary); color: white; padding: 100px 0 50px; border-top: 1px solid #222;">
+    <footer>
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-top">
                 <div class="footer-col">
                     <img src="https://cleanfeetpetcleanup.com/wp-content/uploads/2015/04/cropped-black_background_with_tagline-e1429496051377.jpg" alt="Logo" style="height: 60px; margin-bottom: 1.5rem;">
+                    <p style="opacity: 0.6; font-size: 0.9rem;">Omaha's premium pet waste removal service. Professional scooping, sanitized tools, and 100% satisfaction guaranteed.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/dog-services.html">Dog Services</a></li>
+                        <li><a href="/cat-services.html">Cat Services</a></li>
+                        <li><a href="/service-area.html">Service Area</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> (402) 320-3824</p>
+                    <p><i class="fas fa-envelope"></i> cleanfeetpetcleanup@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 8AM-4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clean Feet Pet Cleanup. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/service-agreement.html">Service Agreement</a>
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/faqs.html">FAQs</a>
                 </div>
             </div>
         </div>
