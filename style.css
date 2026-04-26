@@ -440,15 +440,71 @@ section {
   color: white;
 }
 
-.contact-overlay h2 {
+.contact-info h2 {
   color: white;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-methods p {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-methods i {
+  color: var(--primary);
+}
+
+.contact-form-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  color: #000;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
   .contact-overlay {
     grid-template-columns: 1fr;
-    padding: 2.5rem;
+    padding: 3rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-overlay {
+    padding: 1.5rem;
     gap: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem;
   }
 }
 
