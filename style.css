@@ -367,8 +367,8 @@ section {
 
 /* Blog Rebuild */
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   max-width: 900px;
   margin: 0 auto;
@@ -383,6 +383,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 420px;
 }
 
 .blog-card:hover {
@@ -395,6 +396,7 @@ section {
   height: 200px;
   background-size: cover;
   background-position: center;
+  border-radius: 12px 12px 0 0;
 }
 
 .blog-content {
