@@ -832,6 +832,15 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
+  :root {
+    --header-h: 60px; /* Shorter header on mobile/tablet */
+  }
+
+  .logo img {
+    height: 45px; /* Smaller logo on mobile */
+    filter: brightness(1.2) drop-shadow(0 0 5px rgba(141, 198, 63, 0.2));
+  }
+
   .nav-links {
     display: none;
     position: fixed;
@@ -914,7 +923,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    padding: calc(var(--header-h) + 0.5rem) 1.5rem 2rem;
+    padding: calc(var(--header-h) + 1.5rem) 1.5rem 2rem; /* Increased top padding to push text below dog's head */
     text-align: center;
     margin: 0;
     max-width: none;
@@ -927,7 +936,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.7rem; /* Smaller font to avoid covering the dog */
     line-height: 1.2;
     margin-bottom: 0.5rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
