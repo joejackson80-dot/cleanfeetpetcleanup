@@ -977,9 +977,15 @@ footer {
   }
 
   .hero-image {
-    background-position: 75% center;
-    height: 35%; /* Fixed height for dogs */
-    top: 45%; /* Shift dogs up slightly to clear the bottom content */
+    display: none; /* Hide the absolute desktop image on mobile */
+  }
+
+  .hero-image-mobile {
+    display: block;
+    width: 100%;
+    height: 35vh; /* Responsive height for the dogs */
+    background: url('/hero.png') center / contain no-repeat;
+    margin: 1rem 0;
   }
 }
 
