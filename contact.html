@@ -44,7 +44,7 @@
 
         <section id="contact">
             <div class="container">
-                <div class="contact-overlay">
+                <div class="contact-overlay" style="padding: 3rem; max-width: 1100px; margin: 0 auto;">
                     <div class="contact-info">
                         <h2>Get in <span>Touch</span></h2>
                         <p>Our office is open Monday through Friday, 8:00 AM to 4:00 PM. We typically respond to all quote requests within the same business day.</p>
@@ -73,15 +73,13 @@
                     
                     <div class="contact-form-card">
                         <form id="quote-form">
-                            <h3>Request a Free Quote</h3>
-                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <h3 style="margin-bottom: 1.5rem; text-align: center;">Get a Free Quote</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 0;">
                                 <input type="text" class="form-input" placeholder="Full Name" required>
                                 <input type="email" class="form-input" placeholder="Email Address" required>
                             </div>
-                            <input type="tel" class="form-input" placeholder="Phone Number" required>
-                            <input type="text" class="form-input" placeholder="Service Address" required>
-                            
-                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 0;">
+                                <input type="tel" class="form-input" placeholder="Phone Number" required>
                                 <select class="form-input" required>
                                     <option value="" disabled selected>Service Type</option>
                                     <option>Weekly Dog Waste</option>
@@ -90,11 +88,28 @@
                                     <option>One-Time Cleanup</option>
                                     <option>Commercial Service</option>
                                 </select>
-                                <input type="number" class="form-input" placeholder="Number of Dogs" min="1">
                             </div>
-                            
-                            <textarea class="form-input" placeholder="Your message or special instructions..." rows="4"></textarea>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Quote Request &rarr;</button>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 0;">
+                                <select class="form-input" required>
+                                    <option value="" disabled selected>Number of Dogs</option>
+                                    <option>0 Dogs</option>
+                                    <option>1 Dog</option>
+                                    <option>2 Dogs</option>
+                                    <option>3 Dogs</option>
+                                    <option>4+ Dogs</option>
+                                </select>
+                                <select class="form-input" required>
+                                    <option value="" disabled selected>Number of Cats</option>
+                                    <option>0 Cats</option>
+                                    <option>1 Cat</option>
+                                    <option>2 Cats</option>
+                                    <option>3 Cats</option>
+                                    <option>4+ Cats</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-input" placeholder="Service Address" required>
+                            <textarea class="form-input" placeholder="Special Instructions or Message" rows="3"></textarea>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Get Free Quote &rarr;</button>
                         </form>
                         <div id="form-success" class="form-success">
                             Thanks! We'll be in touch within 24 hours.

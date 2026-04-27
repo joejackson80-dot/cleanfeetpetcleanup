@@ -384,16 +384,42 @@
                     </div>
                     <div class="contact-form-card">
                         <form id="quote-form">
-                            <input type="text" class="form-input" placeholder="Full Name" required>
-                            <input type="email" class="form-input" placeholder="Email Address" required>
-                            <select class="form-input">
-                                <option disabled selected>Number of Dogs</option>
-                                <option>1 Dog</option>
-                                <option>2 Dogs</option>
-                                <option>3 Dogs</option>
-                                <option>4+ Dogs</option>
-                            </select>
-                            <textarea class="form-input" placeholder="Service Address & Instructions" rows="4"></textarea>
+                            <h3 style="margin-bottom: 1.5rem; text-align: center;">Get a Free Quote</h3>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <input type="text" class="form-input" placeholder="Full Name" required>
+                                <input type="email" class="form-input" placeholder="Email Address" required>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <input type="tel" class="form-input" placeholder="Phone Number" required>
+                                <select class="form-input" required>
+                                    <option value="" disabled selected>Service Type</option>
+                                    <option>Weekly Dog Waste</option>
+                                    <option>Twice-Weekly Dog Waste</option>
+                                    <option>Cat Litter Service</option>
+                                    <option>One-Time Cleanup</option>
+                                    <option>Commercial Service</option>
+                                </select>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <select class="form-input" required>
+                                    <option value="" disabled selected>Number of Dogs</option>
+                                    <option>0 Dogs</option>
+                                    <option>1 Dog</option>
+                                    <option>2 Dogs</option>
+                                    <option>3 Dogs</option>
+                                    <option>4+ Dogs</option>
+                                </select>
+                                <select class="form-input" required>
+                                    <option value="" disabled selected>Number of Cats</option>
+                                    <option>0 Cats</option>
+                                    <option>1 Cat</option>
+                                    <option>2 Cats</option>
+                                    <option>3 Cats</option>
+                                    <option>4+ Cats</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-input" placeholder="Service Address" required>
+                            <textarea class="form-input" placeholder="Special Instructions or Message" rows="3"></textarea>
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Get Free Quote &rarr;</button>
                         </form>
                         <div id="form-success" class="form-success">
