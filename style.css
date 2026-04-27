@@ -1057,40 +1057,69 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .cat-grid, .area-grid {
-    grid-template-columns: 1fr;
-  }
-
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem; /* Slightly smaller to prevent overlap */
     margin-bottom: 0;
+    line-height: 1.2;
   }
   
   .hero-info-bottom p {
-    font-size: 0.8rem;
-    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-btns .btn {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
   }
 
   .hero-content {
-    padding: calc(var(--header-h) + 1.5rem) 1rem 1.5rem;
+    padding: calc(var(--header-h) + 1rem) 1rem 1rem;
   }
 
-  .section-title h2 {
-    font-size: 2.2rem;
+  .hero-image {
+    height: 30%; /* Slightly smaller dogs to give text more room */
   }
 
-  .contact-overlay {
-    padding: 1.5rem;
-    gap: 2rem;
+  /* Responsive Utilities for new sections */
+  .benefits-grid, .commercial-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
 
-  .contact-info h2 {
-    font-size: 2.2rem;
+  .commercial-content {
+    text-align: center;
   }
 
-  .contact-form-card {
-    padding: 1.5rem;
+  .commercial-content h2 {
+    font-size: 2rem !important;
   }
+
+  .benefit-card {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Commercial & Benefits Shared Styles */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  padding: 2.5rem;
+  background: var(--bg-alt);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.commercial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 4rem;
+  align-items: center;
 }
 
 /* Modal Styles */
