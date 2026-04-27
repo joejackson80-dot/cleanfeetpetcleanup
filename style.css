@@ -836,9 +836,21 @@ footer {
     --header-h: 60px; /* Shorter header on mobile/tablet */
   }
 
+  .nav-container {
+    padding: 0 1rem; /* Reduced padding to give logo more room */
+  }
+
+  .logo {
+    flex-shrink: 0;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+  }
+
   .logo img {
-    height: 45px; /* Smaller logo on mobile */
-    filter: brightness(1.2) drop-shadow(0 0 5px rgba(141, 198, 63, 0.2));
+    height: 45px;
+    filter: brightness(1.3) contrast(1.2); /* Higher contrast for mobile visibility */
+    -webkit-filter: brightness(1.3) contrast(1.2);
   }
 
   .nav-links {
