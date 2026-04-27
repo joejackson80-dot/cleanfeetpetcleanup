@@ -983,15 +983,14 @@ footer {
   }
 
   .hero-image {
-    display: none; /* Hide the absolute desktop image on mobile */
+    display: block; /* Back to being a background image */
+    background-position: 75% center;
+    height: 100%;
+    top: 0;
   }
 
   .hero-image-mobile {
-    display: block;
-    width: 100%;
-    height: 35vh; /* Responsive height for the dogs */
-    background: url('/hero.png') center / contain no-repeat;
-    margin: 1rem 0;
+    display: none;
   }
 }
 
