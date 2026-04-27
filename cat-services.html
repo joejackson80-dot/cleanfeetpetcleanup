@@ -6,6 +6,8 @@
     <title>Cat Litter Services | Clean Feet Pet Cleanup Omaha</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ASELLUZO-xAa75myiEEqAKDNuoflZp1tONYi5eZTJxqPM8OaqNY7i30D8lhKf7e7RcFZQEFu1gvLLX32&currency=USD&disable-funding=credit,card"></script>
 </head>
 <body>
     <header id="header">
@@ -49,17 +51,27 @@
                         <h3>1 Cat</h3>
                         <div class="price">$50<span>/mo</span></div>
                         <p style="margin-bottom: 2rem;">Weekly exchange and fresh premium litter delivery.</p>
-                        <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                        <a href="javascript:void(0)" class="btn btn-primary checkout-btn" data-price="50" data-plan="1 Cat Litter Service" style="width: 100%;">Get Started</a>
                     </div>
                     <div class="price-card">
                         <h3>2 Cats</h3>
                         <div class="price">$70<span>/mo</span></div>
                         <p style="margin-bottom: 2rem;">Weekly exchange and fresh premium litter delivery.</p>
-                        <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                        <a href="javascript:void(0)" class="btn btn-primary checkout-btn" data-price="70" data-plan="2 Cats Litter Service" style="width: 100%;">Get Started</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Payment Modal -->
+        <div id="payment-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="modal-title">Complete Your Order</h2>
+                <p id="modal-description" style="margin-bottom: 2rem;">You are signing up for <span></span></p>
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
