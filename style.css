@@ -689,60 +689,16 @@ select.form-input {
 
 @media (max-width: 600px) {
   .contact-overlay {
-    padding: 3rem 1.25rem;
+    padding: 1.5rem;
     gap: 2rem;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    border-radius: 0;
   }
 
   .contact-info h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .contact-info p {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .contact-methods {
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .method-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1.5rem;
-    border-radius: 12px;
-    width: 100%;
-  }
-
-  .method-icon {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-
-  .method-text h4 {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0.25rem;
-    opacity: 0.7;
-  }
-
-  .method-text p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0;
+    font-size: 2.2rem;
   }
 
   .contact-form-card {
-    padding: 2rem 1.25rem;
+    padding: 1.5rem;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -931,17 +887,25 @@ footer {
     align-items: stretch;
   }
 
+  .hero .container {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+
   .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    padding: calc(var(--header-h) + 2rem) 1.5rem 2.5rem;
+    padding: calc(var(--header-h) + 2rem) 1.5rem 2rem;
     text-align: center;
     margin: 0;
     max-width: none;
     width: 100%;
     background: none;
+    backdrop-filter: none;
+    border: none;
     position: relative;
     z-index: 2;
   }
@@ -950,37 +914,17 @@ footer {
     font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 0;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-    font-weight: 800;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   }
 
   .hero-info-bottom {
     margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
   }
 
   .hero-info-bottom p {
-    font-size: 1rem;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-    line-height: 1.4;
-    font-weight: 400;
-  }
-
-  .hero-btns {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero-btns .btn {
-    width: 100%;
-    max-width: 300px;
-    padding: 1rem;
-    font-size: 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
   }
 
   .hero-image {
