@@ -97,11 +97,11 @@ header {
 }
 
 .logo img {
-  height: 60px;
+  height: 70px; /* Increased for better desktop visibility */
   width: auto;
   object-fit: contain;
   transition: var(--transition);
-  filter: brightness(1.1); /* Slight boost for dark logos */
+  filter: drop-shadow(0 0 10px rgba(141, 198, 63, 0.3)); /* Stronger glow for visibility */
 }
 
 .logo:hover img {
@@ -113,9 +113,7 @@ header {
   display: flex;
   gap: 2.5rem;
   list-style: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto; /* Centered without absolute positioning */
 }
 
 .nav-links a {
@@ -704,16 +702,18 @@ select.form-input {
 
 @media (max-width: 600px) {
   .contact-overlay {
-    padding: 1.5rem;
-    gap: 2rem;
+    padding: 1.25rem !important;
+    gap: 1.25rem !important;
+    margin: 0 !important;
+    border-radius: 20px;
   }
 
   .contact-info h2 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 
   .contact-form-card {
-    padding: 1.5rem;
+    padding: 1.25rem !important;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -927,9 +927,9 @@ footer {
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.2;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   }
 
@@ -1076,20 +1076,28 @@ footer {
 
   /* Form Optimization */
   .contact-form-card {
-    padding: 1.5rem;
+    padding: 1.25rem !important;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
   }
 
   .form-input {
-    padding: 0.85rem 1rem;
+    padding: 0.7rem 1rem !important;
     font-size: 0.95rem;
   }
 
   .contact-info h2 {
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-overlay {
+    padding: 1rem !important;
+    gap: 1rem !important;
+    margin: 0 !important;
+    border-radius: 20px;
   }
 }
 
