@@ -1019,30 +1019,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .hero h1 {
-    font-size: 1.5rem; /* Slightly smaller to prevent overlap */
-    margin-bottom: 0;
-    line-height: 1.2;
-  }
-  
-  .hero-info-bottom p {
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero-btns .btn {
-    padding: 0.8rem 1rem;
-    font-size: 0.85rem;
-  }
-
-  .hero-content {
-    padding: calc(var(--header-h) + 1rem) 1rem 1rem;
-  }
-
-  .hero-image {
-    height: 30%; /* Slightly smaller dogs to give text more room */
-  }
-
   /* Responsive Utilities for new sections */
   .benefits-grid, .commercial-grid {
     grid-template-columns: 1fr !important;
