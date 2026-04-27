@@ -448,6 +448,25 @@ section {
   border-color: var(--primary);
 }
 
+/* Cat Service Section */
+.cat-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cat-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 /* Blog Rebuild */
 .blog-grid {
   display: grid;
@@ -895,60 +914,35 @@ footer {
   }
 
   .cat-grid, .area-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .hero {
     height: 100vh;
-    min-height: 100vh;
+    min-height: 580px;
     padding: 0;
     display: flex;
-    align-items: stretch;
-  }
-
-  .hero .container {
-    padding: 0;
-    width: 100%;
-    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
-    padding: calc(var(--header-h) + 2rem) 1.5rem 2rem;
-    text-align: center;
-    margin: 0;
-    max-width: none;
+    height: 100%;
     width: 100%;
-    background: none;
-    backdrop-filter: none;
-    border: none;
-  }
-
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - var(--header-h));
-    min-height: 500px;
-    padding: 3rem 1.5rem 4rem;
+    padding: calc(var(--header-h) + 1.5rem) 1.25rem 2rem;
     text-align: center;
-    margin: 0;
-    max-width: none;
-    width: 100%;
-    background: none;
     position: relative;
     z-index: 2;
   }
 
   .hero h1 {
-    font-size: 2.2rem;
-    line-height: 1.1;
+    font-size: 1.7rem;
+    line-height: 1.2;
     margin-bottom: 0;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
   }
 
   .hero-info-bottom {
@@ -956,30 +950,36 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
   }
 
   .hero-info-bottom p {
-    font-size: 1rem;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    font-size: 0.9rem;
     line-height: 1.4;
-    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+    max-width: 320px;
   }
 
   .hero-btns {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
   }
 
   .hero-btns .btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    padding: 0.85rem;
+    font-size: 0.95rem;
   }
 
   .hero-image {
-    background-position: 80% center;
+    background-position: 75% center;
+    height: 32%;
+    top: 48%; /* Center the dogs more precisely */
   }
 }
 
