@@ -689,18 +689,21 @@ select.form-input {
 
 @media (max-width: 600px) {
   .contact-overlay {
-    padding: 3rem 1.25rem;
-    gap: 2rem;
-    border-radius: 16px;
+    padding: 3rem 1rem;
+    gap: 2.5rem;
+    border-radius: 0; /* Full width on mobile looks cleaner */
+    width: 100%;
+    margin: 0;
   }
 
   .contact-info h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .contact-info p {
     text-align: center;
+    font-size: 1rem;
   }
 
   .contact-methods {
@@ -739,7 +742,10 @@ select.form-input {
   }
 
   .contact-form-card {
-    padding: 1.75rem 1.25rem;
+    padding: 2rem 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
